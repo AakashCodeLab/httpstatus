@@ -7,6 +7,7 @@ const errorHandler = require('./errorHnadler');
 app.use(cors())
 app.use(express.json())
 app.get('/user', user.getuser);
+app.get('/getDetails', user.getDetails);
 app.post('/login', user.login);
 app.use(errorHandler);
 
